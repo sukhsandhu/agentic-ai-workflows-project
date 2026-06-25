@@ -1,0 +1,124 @@
+[
+  {
+    "case_id": "CASE-001",
+    "decision": "standard_queue",
+    "reason": "Signals are within operational thresholds.",
+    "priority_score": 0.21,
+    "quality_risk": 0.0,
+    "trace": [
+      {
+        "step": "initialize",
+        "case_id": "CASE-001"
+      },
+      {
+        "step": "tool:data_quality",
+        "observation": {
+          "missing_count": 0,
+          "quality_risk": 0.0,
+          "missing_fields": []
+        }
+      },
+      {
+        "step": "tool:policy_lookup",
+        "observation": {
+          "constraint": "internal_review_allowed",
+          "reason": "internal operations case"
+        }
+      },
+      {
+        "step": "tool:priority",
+        "observation": {
+          "priority_score": 0.21
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-002",
+    "decision": "expedited_human_review",
+    "reason": "Combined risk and data-quality signals exceed review threshold.",
+    "priority_score": 0.87,
+    "quality_risk": 0.36,
+    "trace": [
+      {
+        "step": "initialize",
+        "case_id": "CASE-002"
+      },
+      {
+        "step": "tool:data_quality",
+        "observation": {
+          "missing_count": 2,
+          "quality_risk": 0.36,
+          "missing_fields": [
+            "recent_lab_date",
+            "follow_up_status"
+          ]
+        }
+      },
+      {
+        "step": "tool:policy_lookup",
+        "observation": {
+          "constraint": "internal_review_allowed",
+          "reason": "internal operations case"
+        }
+      },
+      {
+        "step": "tool:priority",
+        "observation": {
+          "priority_score": 0.87
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-003",
+    "decision": "human_review_required",
+    "reason": "Patient-facing case cannot be finalized automatically.",
+    "priority_score": 0.74,
+    "quality_risk": 0.0,
+    "trace": [
+      {
+        "step": "initialize",
+        "case_id": "CASE-003"
+      },
+      {
+        "step": "tool:data_quality",
+        "observation": {
+          "missing_count": 0,
+          "quality_risk": 0.0,
+          "missing_fields": []
+        }
+      },
+      {
+        "step": "tool:policy_lookup",
+        "observation": {
+          "constraint": "human_approval_required",
+          "reason": "patient-facing recommendation"
+        }
+      },
+      {
+        "step": "tool:priority",
+        "observation": {
+          "priority_score": 0.74
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE-004",
+    "decision": "manual_data_quality_review",
+    "reason": "Missing required fields: ['model_confidence']",
+    "trace": [
+      {
+        "step": "initialize",
+        "case_id": "CASE-004"
+      },
+      {
+        "step": "fallback",
+        "missing_required": [
+          "model_confidence"
+        ]
+      }
+    ]
+  }
+]

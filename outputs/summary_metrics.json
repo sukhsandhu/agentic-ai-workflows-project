@@ -1,0 +1,9 @@
+{
+  "cases": 4,
+  "decision_counts": {
+    "standard_queue": 1,
+    "expedited_human_review": 1,
+    "human_review_required": 1,
+    "manual_data_quality_review": 1
+  }
+}
