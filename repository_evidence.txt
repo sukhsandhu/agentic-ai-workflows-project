@@ -1,17 +1,21 @@
-Local Version-Control Evidence
+Public GitHub Repository Evidence
 
-        Author: Sukh Sandhu
+Author: Sukh Sandhu
+Repository: https://github.com/sukhsandhu/agentic-ai-workflows-project
 
-        Branches:
-        development
+Branches:
+development
 * main
+  remotes/origin/development
+  remotes/origin/main
 
-        Commit history:
-        *   80f28d0 (HEAD -> main) Merge development evidence
+Commit history:
+* efac2da (HEAD -> main, origin/main) Document repository evidence
+*   80f28d0 Merge development evidence
 |\  
-| * 40d8a72 (development) Add development branch notes
+| * 40d8a72 (origin/development, development) Add development branch notes
 |/  
 * a4040e4 Initial capstone project structure
 
-        Submission note:
-        The project folder is organized so it can be pushed to the required public GitHub repository before final Udacity upload.
+Rubric note:
+The public repository includes multiple commits on main and an additional development branch.
