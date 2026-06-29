@@ -17,6 +17,7 @@ Author: Sukh Sandhu
 - `agentic_system.ipynb`: notebook wrapper for the same workflow.
 - `config/agent_policy.json`: thresholds, scope, and required fields.
 - `prompt_templates/system_prompt.txt`: agent role and boundary prompt.
+- `agentic_workflow_architecture.md`: architecture diagram showing components, reasoning flow, memory/state, tools, and safeguards.
 - `outputs/execution_log.json`: observed behavior across representative scenarios.
 - `Agentic_AI_System_Design_Report.pdf`: written report with citations.
 
