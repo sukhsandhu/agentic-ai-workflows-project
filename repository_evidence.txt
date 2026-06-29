@@ -2,15 +2,19 @@ Public GitHub Repository Evidence
 
 Author: Sukh Sandhu
 Repository: https://github.com/sukhsandhu/agentic-ai-workflows-project
+Evidence refreshed: 2026-06-29
 
 Branches:
-development
+  development
 * main
   remotes/origin/development
   remotes/origin/main
 
-Commit history:
-* efac2da (HEAD -> main, origin/main) Document repository evidence
+Substantive commit history:
+* 989b78d (HEAD -> main, origin/main) Add agentic workflow architecture diagram
+* f4ee530 Add Udacity submission filename aliases
+* 587ea60 Add public GitHub repository link
+* efac2da Document repository evidence
 *   80f28d0 Merge development evidence
 |\  
 | * 40d8a72 (origin/development, development) Add development branch notes
@@ -18,4 +22,4 @@ Commit history:
 * a4040e4 Initial capstone project structure
 
 Rubric note:
-The public repository includes multiple commits on main and an additional development branch.
+The public repository includes multiple commits on main and an additional development branch. The architecture diagram commit is included in the current public history.
